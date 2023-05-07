@@ -1,7 +1,8 @@
 import { ReactNode } from "react"
+
+import Content from "./Content"
 import Header from "./Header"
 import Sidebar from "./Sidebar"
-import Content from "./Content"
 
 interface LayoutProps {
     title: string
@@ -12,6 +13,7 @@ interface LayoutProps {
 export default function Layout(props: LayoutProps) {
     return (
         <div className={`
+            dark
             flex h-screen w-screen
         `}>
             <Sidebar />
